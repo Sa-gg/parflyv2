@@ -34,10 +34,12 @@ const Hero = () => {
 
   const handleInstallClick = () => {
     console.log('Install button clicked');
+  
     if (isInstalled) {
-      alert('App already installed');
+      openPWA();
       return;
     }
+  
     if (deferredPrompt) {
       deferredPrompt.prompt();
       deferredPrompt.userChoice.then((choiceResult) => {
@@ -46,25 +48,26 @@ const Hero = () => {
         } else {
           console.log('User dismissed the install prompt');
         }
-        setDeferredPrompt(null); // Reset after use
+        setDeferredPrompt(null);
       });
     } else {
-      
       console.log('No deferred prompt available');
-      openPWA();
+      openPWA(); // Try opening if installed
     }
   };
+  
 
-    // Function to open the installed PWA
-const openPWA = () => {
-  if ('launchQueue' in navigator) {
-    navigator.launchQueue.setConsumer(() => {});
-    console.log('PWA launched');
-  } else {
-    console.log("PWA not launched")
-    // window.open(window.location.origin, '_self');
-  }
-};
+  const openPWA = () => {
+    // Check if the PWA is installed
+    if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone || isInstalled) {
+      console.log('PWA is already installed, opening it...');
+      window.location.href = window.location.origin;
+      return;
+    } else {
+      console.log('PWA not installed');
+    }
+  };
+  
 
 
 
@@ -104,5 +107,6 @@ const openPWA = () => {
     </>
   );
 }
+
 
 export default Hero;
