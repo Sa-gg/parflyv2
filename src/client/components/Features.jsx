@@ -1,10 +1,7 @@
 import React from "react";
-import FastDelivery from "../../assets/img/fast-delivery.jpg";
-import RealTimeTracking from "../../assets/img/time-tracking.jpg";
-import AffordableRates from "../../assets/img/affordable-rates.jpg";
 import deliveryGuy from "../../assets/deliveryGuyWithLogo.svg";
 import background from "../../assets/background.svg";
-import realTimeTracking from "../../assets/realTimeTracking.svg";
+import realTimeTracking from "../../assets/realtimeTracking.svg";
 import discount from "../../assets/discount.svg";
 
 const Features = () => {
