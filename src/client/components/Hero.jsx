@@ -51,8 +51,21 @@ const Hero = () => {
     } else {
       alert('No install prompt available. Try refreshing the page or checking browser settings.');
       console.log('No deferred prompt available');
+      openPWA();
     }
   };
+
+    // Function to open the installed PWA
+const openPWA = () => {
+  if ('launchQueue' in navigator) {
+    navigator.launchQueue.setConsumer(() => {});
+    console.log('PWA launched');
+  } else {
+    window.open(window.location.origin, '_self');
+  }
+};
+
+
 
   return (
     <>
