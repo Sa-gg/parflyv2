@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import Logo from '../../assets/img/logo.png'
 
 const Navbar = () => {
   return (
@@ -9,7 +10,7 @@ const Navbar = () => {
         >
           <NavLink to='/' className="flex items-center space-x-0 rtl:space-x-reverse">
             <img
-              src="/src/assets/img/logo.png"
+              src={Logo}
               className="mr-3 h-[45px]"
               alt="Parfly Logo"
             />
