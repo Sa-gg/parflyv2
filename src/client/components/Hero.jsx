@@ -58,9 +58,8 @@ const Hero = () => {
   
 
   const openPWA = () => {
-    window.open("/", "_self"); // Opens in the same window
+    window.location.href = `intent://${window.location.host}/#Intent;scheme=https;action=android.intent.action.VIEW;category=android.intent.category.DEFAULT;end;`;
   };
-  
   
   
 
