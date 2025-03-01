@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import deliveryGuy from "../../assets/deliveryGuyWithLogo.svg";
 import phone from "../../assets/phone.svg";
 import background from "../../assets/background.svg";
+import { toast } from 'react-toastify'; 
 
 const Hero = () => {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
@@ -61,7 +62,7 @@ const Hero = () => {
 
   const openPWA = () => {
     // window.location.href = `intent://${window.location.host}/#Intent;scheme=https;action=android.intent.action.VIEW;category=android.intent.category.DEFAULT;end;`;
-    alert("PWA is already installed");
+    toast.success('App is already installed');
   };
 
   return (
