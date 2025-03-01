@@ -6,26 +6,19 @@ import background from "../../assets/background.svg";
 const Hero = () => {
   
 
-    useEffect(() => {
-        const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone;
-        console.log('Is PWA installed?', isStandalone);
-      
-        if (isStandalone) {
-          return; // Exit early if already installed
-        }
-      
-        const handleBeforeInstallPrompt = (e) => {
-          e.preventDefault();
-          console.log('beforeinstallprompt event fired');
-          window.deferredPrompt = e; // Store event globally
-        };
-      
-        window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-      
-        return () => {
-          window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-        };
-      }, []);
+  useEffect(() => {
+    const handleBeforeInstallPrompt = (e) => {
+      e.preventDefault();
+      console.log('beforeinstallprompt event fired');
+      window.deferredPrompt = e; // Store it globally
+    };
+  
+    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+  
+    return () => {
+      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+    };
+  }, []);
   
   const handleInstallClick = () => {
     console.log('Install button clicked');
