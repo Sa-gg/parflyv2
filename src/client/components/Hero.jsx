@@ -59,7 +59,7 @@ const Hero = () => {
 
   const openPWA = () => {
     // Check if the PWA is installed
-    if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone || isInstalled) {
+    if (window.navigator.standalone || isInstalled) {
       console.log('PWA is already installed, opening it...');
       window.location.href = window.location.origin;
       return;
