@@ -58,7 +58,8 @@ const Hero = () => {
   
 
   const openPWA = () => {
-      return window.location.href = window.location.origin;
+      window.location.href = window.location.origin;
+      return
   };
   
 
