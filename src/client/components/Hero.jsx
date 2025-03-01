@@ -4,7 +4,6 @@ import phone from "../../assets/phone.svg";
 import background from "../../assets/background.svg";
 
 const Hero = () => {
-  
 
   useEffect(() => {
     const handleBeforeInstallPrompt = (e) => {
@@ -22,7 +21,10 @@ const Hero = () => {
   
   const handleInstallClick = () => {
     console.log('Install button clicked');
-    if (window.deferredPrompt) {
+    if (window.matchMedia('(display-mode: standalone)').matches) {
+      console.log('App is already installed');
+      window.location.href = '/app'; // Redirect to the app
+    } else if (window.deferredPrompt) {
       window.deferredPrompt.prompt();
       window.deferredPrompt.userChoice.then((choiceResult) => {
         if (choiceResult.outcome === 'accepted') {
@@ -36,9 +38,6 @@ const Hero = () => {
       console.log('No deferred prompt available');
     }
   };
-  
-
-  
 
   return (
     <>
