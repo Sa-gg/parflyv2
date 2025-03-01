@@ -1,10 +1,33 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import deliveryGuy from "../../assets/deliveryGuyWithLogo.svg";
 import phone from "../../assets/phone.svg";
 import background from "../../assets/background.svg"
 
 
 const Hero = () => {
+
+const [deferredPrompt, setDeferredPrompt] = useState(null);
+
+  useEffect(() => {
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      setDeferredPrompt(e);
+    });
+  }, []);
+
+  const handleInstallClick = () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('User accepted the install prompt');
+        } else {
+          console.log('User dismissed the install prompt');
+        }
+        setDeferredPrompt(null);
+      });
+    }
+  };
   
 
   return (
@@ -27,7 +50,7 @@ const Hero = () => {
                             Book Now
                         </a></div>
                     <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[0%] motion-blur-in-[5px motion-delay-[200ms]">
-                        <a href="" onClick={(event) => event.preventDefault()}
+                        <a href="" onClick={(event) => handleInstallClick()}
                             className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-primary transition duration-150 ease-in-out bg-white border border-transparent rounded-md hover:text-primary-dark focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10 ">
                             Install PWA App
                         </a>
