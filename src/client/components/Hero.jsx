@@ -1,33 +1,50 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import deliveryGuy from "../../assets/deliveryGuyWithLogo.svg";
 import phone from "../../assets/phone.svg";
-import background from "../../assets/background.svg"
-
+import background from "../../assets/background.svg";
 
 const Hero = () => {
+  
 
-const [deferredPrompt, setDeferredPrompt] = useState(null);
-
-  useEffect(() => {
-    window.addEventListener('beforeinstallprompt', (e) => {
-      e.preventDefault();
-      setDeferredPrompt(e);
-    });
-  }, []);
-
+    useEffect(() => {
+        const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone;
+        console.log('Is PWA installed?', isStandalone);
+      
+        if (isStandalone) {
+          return; // Exit early if already installed
+        }
+      
+        const handleBeforeInstallPrompt = (e) => {
+          e.preventDefault();
+          console.log('beforeinstallprompt event fired');
+          window.deferredPrompt = e; // Store event globally
+        };
+      
+        window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+      
+        return () => {
+          window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+        };
+      }, []);
+  
   const handleInstallClick = () => {
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-      deferredPrompt.userChoice.then((choiceResult) => {
+    console.log('Install button clicked');
+    if (window.deferredPrompt) {
+      window.deferredPrompt.prompt();
+      window.deferredPrompt.userChoice.then((choiceResult) => {
         if (choiceResult.outcome === 'accepted') {
           console.log('User accepted the install prompt');
         } else {
           console.log('User dismissed the install prompt');
         }
-        setDeferredPrompt(null);
+        window.deferredPrompt = null;
       });
+    } else {
+      console.log('No deferred prompt available');
     }
   };
+  
+
   
 
   return (
@@ -63,10 +80,6 @@ const [deferredPrompt, setDeferredPrompt] = useState(null);
                    <img src={deliveryGuy} alt="delivery guy svg" className="w-[calc(24rem_+_10vw)] h-auto absolute motion-translate-x-in-[-104%] motion-translate-y-in-[0%] motion-opacity-in-[0%] motion-blur-in-[5px] motion-ease-spring-bouncy motion-rotate-loop-[-20deg] motion-loop-once motion-duration-[2000ms] motion-delay-[350ms] motion-delay-[500ms]/rotate" />
         </div>
     </div>
-
-
-
-     
 
     </>
   )
