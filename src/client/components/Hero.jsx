@@ -58,9 +58,9 @@ const Hero = () => {
   
 
   const openPWA = () => {
-    const url = window.location.origin;
-    window.open(url, "_blank"); // Opens in a new tab, which may trigger standalone mode
+    window.open("/", "_self"); // Opens in the same window
   };
+  
   
   
 
