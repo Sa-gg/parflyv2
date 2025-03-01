@@ -49,7 +49,7 @@ const Hero = () => {
         setDeferredPrompt(null); // Reset after use
       });
     } else {
-      alert('No install prompt available. Try refreshing the page or checking browser settings.');
+      
       console.log('No deferred prompt available');
       openPWA();
     }
@@ -61,7 +61,8 @@ const openPWA = () => {
     navigator.launchQueue.setConsumer(() => {});
     console.log('PWA launched');
   } else {
-    window.open(window.location.origin, '_self');
+    console.log("PWA not launched")
+    // window.open(window.location.origin, '_self');
   }
 };
 
