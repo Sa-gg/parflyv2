@@ -20,6 +20,11 @@ const Hero = () => {
       setIsInstalled(true);
     });
 
+    // Check if the app is already installed
+    if (window.matchMedia('(display-mode: standalone)').matches) {
+      setIsInstalled(true);
+    }
+
     return () => {
       window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
       window.removeEventListener('appinstalled', () => setIsInstalled(true));
