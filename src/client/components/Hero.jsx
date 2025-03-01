@@ -58,14 +58,7 @@ const Hero = () => {
   
 
   const openPWA = () => {
-    // Check if the PWA is installed
-    if (isInstalled) {
-      console.log('PWA is already installed, opening it...');
-      window.location.href = window.location.origin;
-      return;
-    } else {
-      console.log('PWA not installed');
-    }
+      return window.location.href = window.location.origin;
   };
   
 
