@@ -7,8 +7,8 @@ import discount from "../../assets/discount.svg";
 const Features = () => {
   return (
     <section id="features">
-      <h2 className="text-center text-primary font-bold text-4xl pt-[10vh] md:pt-0">
-        Features
+      <h2 className="text-center text-primary font-bold text-base pt-[10vh] md:pt-0">
+        FEATURES
       </h2>
       <div class="flex justify-center align-middle flex-wrap gap-[2.75vw] p-10">
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
