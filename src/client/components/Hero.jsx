@@ -3,6 +3,7 @@ import deliveryGuy from "../../assets/deliveryGuyWithLogo.svg";
 import phone from "../../assets/phone.svg";
 import background from "../../assets/background.svg";
 import { toast } from 'react-toastify'; 
+import { MdDownload } from "react-icons/md";
 
 const Hero = () => {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
@@ -68,14 +69,14 @@ const Hero = () => {
   return (
     <>
       <div className="relative flex flex-col items-center max-w-screen-xl px-10 mx-auto md:flex-row sm:px-6 md:py-[calc(77px_+_15vh)] py-[calc(77px_+_2vh)]">
-        <div className="flex items-center py-10 md:w-1/2 md:pb-20 md:pt-10 md:pr-10">
+        <div className="flex items-center py-10 md:w-1/2 md:pb-20 md:pt-10 md:pr-10 z-10">
           <div className="text-left">
             <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl motion-translate-x-in-[-11%] motion-translate-y-in-[-1%] motion-opacity-in-[0%] motion-blur-in-[5px]♀">
               Deliver
               <span className="font-bold text-primary">Faster</span>
               <span className="text-xl font-semibold rounded-full text-blueGray-500"></span>
             </h2>
-            <p className="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl motion-scale-in-[0.5] motion-opacity-in-[0%] motion-ease-spring-bouncier">
+            <p className="max-w-md mx-auto mt-3 text-base text-text sm:text-lg md:mt-5 md:text-xl md:max-w-3xl motion-scale-in-[0.5] motion-opacity-in-[0%] motion-ease-spring-bouncier">
               On-demand delivery platform. Get your order matched in 3 seconds.
               Experience the fastest and most reliable delivery service tailored
               to meet your needs.
@@ -97,8 +98,9 @@ const Hero = () => {
                     event.preventDefault();
                     handleInstallClick();
                   }}
-                  className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-primary transition duration-150 ease-in-out bg-white border border-transparent rounded-md hover:text-primary-dark focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10"
+                  className="flex gap-2 items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-primary transition duration-150 ease-in-out bg-white border border-transparent rounded-md hover:text-primary-dark focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10"
                 >
+                  <MdDownload />
                   Install PWA App
                 </a>
               </div>

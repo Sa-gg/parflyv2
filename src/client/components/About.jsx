@@ -4,8 +4,8 @@ import aboutSvg from "../../assets/about.svg";
 const About = () => {
   return (
     <>
-      <section id="about" class="px-[10vw] py-[5vw]">
-      <h2 className="text-center text-primary font-bold text-base pt-[10vh] md:pt-0">
+      <section id="about" class="px-[5vw] py-[5vw]">
+      <h2 className="text-center text-primary font-bold text-base pt-[10vh] md:pt-0 hidden">
         ABOUT US
       </h2>
         <div class="container mx-auto py-0 md:py-[4vh] px-4 sm:px-6 lg:px-8 ">
@@ -14,7 +14,7 @@ const About = () => {
               <h3 class="text-3xl font-bold text-primary sm:text-3xl">
                 Connecting Your World
               </h3>
-              <p class="mt-4 text-gray-600 text-lg">
+              <p class="mt-4 text-text text-lg">
                 Parlfly is your go-to platform for fast, secure, and reliable
                 delivery solutions. Designed with simplicity and efficiency in
                 mind, we make sending and receiving parcels effortless for

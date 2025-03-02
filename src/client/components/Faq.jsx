@@ -9,7 +9,7 @@ const Faq = () => {
             <p class="mt-4 text-sm leading-7 text-gray-500 font-regular">
               F.A.Q
             </p>
-            <h3 class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
+            <h3 class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-800">
               Frequently Asked <span class="text-primary">Questions</span>
             </h3>
           </div>
@@ -41,7 +41,7 @@ const Faq = () => {
                     </svg>
                   </div>
                   <div class="bg-gray-100 p-5 px-10 w-full flex items-center">
-                    <h4 class="text-md leading-6 font-medium text-gray-900">
+                    <h4 class="text-md leading-6 font-medium text-gray-800">
                       What could possibly be your first question?
                     </h4>
                   </div>
@@ -129,7 +129,7 @@ const Faq = () => {
                     </svg>
                   </div>
                   <div class="bg-gray-100 p-5 px-10 w-full flex items-center">
-                    <h4 class="text-md leading-6 font-medium text-gray-900">
+                    <h4 class="text-md leading-6 font-medium text-gray-800">
                       What could possibly be your first question?
                     </h4>
                   </div>
@@ -217,7 +217,7 @@ const Faq = () => {
                     </svg>
                   </div>
                   <div class="bg-gray-100 p-5 px-10 w-full flex items-center">
-                    <h4 class="text-md leading-6 font-medium text-gray-900">
+                    <h4 class="text-md leading-6 font-medium text-gray-800">
                       What could possibly be your first question?
                     </h4>
                   </div>

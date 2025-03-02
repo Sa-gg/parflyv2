@@ -20,6 +20,15 @@ export default {
           DEFAULT: '#FF6600',
           dark: '#CC5200', 
         },
+        text: {
+          DEFAULT: '#7a7a7a',
+        },
+        bg: {
+          DEAULT: '#F2F2F2'
+        },
+        darkBlue: {
+          DEFAULT: '#003366'
+        },
       },
     },
   },

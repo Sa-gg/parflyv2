@@ -11,11 +11,11 @@ const Navbar = () => {
           <NavLink to='/' className="flex items-center space-x-0 rtl:space-x-reverse">
             <img
               src={Logo}
-              className="mr-3 h-[45px]"
+              className="mr-3 h-[45px] "
               alt="Parfly Logo"
             />
             <span
-              className="self-center text-2xl font-semibold whitespace-nowrap text-primary dark:text-primary hidden sm:block "
+              className="self-center text-2xl font-semibold whitespace-nowrap text-primary dark:text-primary hidden sm:block"
               >Parfly</span>
           </NavLink>
           <div
@@ -25,7 +25,7 @@ const Navbar = () => {
               id="language-dropdown-menu-btn"
               type="button"
               data-dropdown-toggle="language-dropdown-menu"
-              className="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-[#7a7a7a] hover:text-[#FF6600] dark:text-[#7a7a7a] rounded-lg cursor-pointer dark:hover:bg-gray-700 dark:hover:text-[#FF6600] hidden sm:inline-flex"
+              className="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-text hover:text-[#FF6600] dark:text-text rounded-lg cursor-pointer dark:hover:bg-gray-700 dark:hover:text-[#FF6600] hidden sm:inline-flex"
             >
               <svg
                 className="w-5 h-5 rounded-full me-3"
@@ -70,7 +70,7 @@ const Navbar = () => {
             <NavLink
               id="login-btn"
               to='/login'
-              className="text-[#7a7a7a] hover:text-[#FF6600] dark:text-[#7a7a7a] font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+              className="text-text hover:text-[#FF6600] dark:text-text font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
               >Login</NavLink>
             <NavLink
                to="/register"
@@ -236,7 +236,7 @@ const Navbar = () => {
               id="menu-btn-mobile"
               data-collapse-toggle="navbar-language"
               type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#7a7a7a] rounded-lg md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-text rounded-lg md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-language"
               aria-expanded="false"
             >
@@ -269,26 +269,26 @@ const Navbar = () => {
               <li>
                 <NavLink
                   to="/business"
-                  className="block py-2 px-3 md:p-0 text-[#7a7a7a] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FF6600] dark:text-[#7a7a7a] md:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] md:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block py-2 px-3 md:p-0 text-text rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FF6600] dark:text-text md:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] md:dark:hover:bg-transparent dark:border-gray-700"
                   >Business</NavLink>
               </li>
               <li>
                 <NavLink
                   to='/personal'
-                  className="block py-2 px-3 md:p-0 text-[#7a7a7a] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FF6600] dark:text-[#7a7a7a] md:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] md:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block py-2 px-3 md:p-0 text-text rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FF6600] dark:text-text md:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] md:dark:hover:bg-transparent dark:border-gray-700"
                   >Personal</NavLink>
               </li>
               <li>
                 <NavLink
                   to='/driver'
-                  className="block py-2 px-3 md:p-0 text-[#7a7a7a] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FF6600] dark:text-[#7a7a7a] md:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] md:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block py-2 px-3 md:p-0 text-text rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FF6600] dark:text-text md:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] md:dark:hover:bg-transparent dark:border-gray-700"
                   >Driver</NavLink>
               </li>
               <li>
                 <button
                   id="mega-menu-dropdown-button"
                   data-dropdown-toggle="mega-menu-dropdown"
-                  className="flex items-center justify-between w-full py-2 px-3 font-medium text-[#7a7a7a] border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-[#FF6600] md:p-0 dark:text-[#7a7a7a] md:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] md:dark:hover:bg-transparent dark:border-gray-700"
+                  className="flex items-center justify-between w-full py-2 px-3 font-medium text-text border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-[#FF6600] md:p-0 dark:text-text md:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Company
                   <svg
@@ -311,7 +311,7 @@ const Navbar = () => {
                   id="mega-menu-dropdown"
                   className="absolute z-10 grid hidden w-auto grid-cols-2 text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700"
                 >
-                  <div className="p-4 pb-0 text-gray-900 md:pb-4 dark:text-[#7a7a7a]">
+                  <div className="p-4 pb-0 text-gray-900 md:pb-4 dark:text-text">
                     <ul
                       className="space-y-4"
                       aria-labelledby="mega-menu-dropdown-button"
@@ -342,7 +342,7 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="p-4 pb-0 text-gray-900 md:pb-4 dark:text-[#7a7a7a]">
+                  <div className="p-4 pb-0 text-gray-900 md:pb-4 dark:text-text">
                     <ul className="space-y-4">
                       <li>
                         <NavLink
@@ -387,7 +387,7 @@ const Navbar = () => {
               <li>
                 <NavLink
                   to="/team"
-                  className="block py-2 px-3 md:p-0 text-[#7a7a7a] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FF6600] dark:text-[#7a7a7a] md:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] md:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block py-2 px-3 md:p-0 text-text rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FF6600] dark:text-text md:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] md:dark:hover:bg-transparent dark:border-gray-700"
                   >Team</NavLink>
               </li>
             </ul>
