@@ -69,9 +69,9 @@ const Hero = () => {
   return (
     <>
       <div className="relative flex flex-col items-center max-w-screen-xl px-10 mx-auto md:flex-row sm:px-6 md:py-[calc(77px_+_15vh)] py-[calc(77px_+_2vh)]">
-        <div className="flex items-center py-10 md:w-1/2 md:pb-20 md:pt-10 md:pr-10 z-10">
+        <div className="flex items-center py-10 md:w-1/2 md:pb-20 md:pt-10 md:pr-0 z-10">
           <div className="text-left">
-            <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl motion-translate-x-in-[-11%] motion-translate-y-in-[-1%] motion-opacity-in-[0%] motion-blur-in-[5px]♀">
+            <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl motion-translate-x-in-[-11%] motion-translate-y-in-[-1%] motion-opacity-in-[0%] motion-blur-in-[5px] dark:text-white">
               Deliver
               <span className="font-bold text-primary">Faster</span>
               <span className="text-xl font-semibold rounded-full text-blueGray-500"></span>
@@ -82,23 +82,23 @@ const Hero = () => {
               to meet your needs.
             </p>
             <div className="mt-5 sm:flex md:mt-8">
-              <div className="rounded-md shadow motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[0%] motion-blur-in-[5px]">
+              <div className="rounded-lg shadow motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[0%] motion-blur-in-[5px]">
                 <a
                   href=""
                   onClick={(event) => event.preventDefault()}
-                  className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-primary border border-transparent rounded-md hover:bg-primary-dark focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10"
+                  className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-primary border border-transparent rounded-lg hover:bg-primary-dark focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10"
                 >
                   Book Now
                 </a>
               </div>
-              <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[0%] motion-blur-in-[5px] motion-delay-[200ms]">
+              <div className="mt-3 rounded-lg shadow sm:mt-0 sm:ml-3 motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[0%] motion-blur-in-[5px] motion-delay-[200ms]">
                 <a
                   href=""
                   onClick={(event) => {
                     event.preventDefault();
                     handleInstallClick();
                   }}
-                  className="flex gap-2 items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-primary transition duration-150 ease-in-out bg-white border border-transparent rounded-md hover:text-primary-dark focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10"
+                  className="flex gap-2 items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-primary transition duration-150 ease-in-out bg-white border border-transparent rounded-lg hover:text-primary-dark focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10"
                 >
                   <MdDownload />
                   Install PWA App

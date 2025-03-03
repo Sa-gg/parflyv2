@@ -17,7 +17,7 @@ const Features = () => {
         your items arrive on time and in perfect condition.
       </p>
       <div class="flex justify-center align-middle flex-wrap gap-[2.75vw] px-[5vw] py-[2rem]">
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 group">
           <div className="relative w-auto h-autox` aspect-w-643 aspect-h-360">
             <img
               src={background}
@@ -27,7 +27,7 @@ const Features = () => {
             <img
               src={deliveryGuy}
               alt="delivery guy svg"
-              className="w-full h-auto z-10 motion-translate-x-loop-[-30%] motion-translate-y-loop-[0%] motion-duration-[2000ms] motion-ease-spring-smooth"
+              className="w-full h-auto z-10 motion-translate-x-loop-[-30%] motion-translate-y-loop-[0%] motion-duration-[2000ms] motion-ease-spring-smooth group-hover:motion-duration-[200ms]"
             />
           </div>
 
@@ -43,13 +43,13 @@ const Features = () => {
             </p>
           </div>
         </div>
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 group">
           <a href="#">
             <div className="relative w-auto h-autox` aspect-w-643 aspect-h-360">
               <img
                 src={pin}
                 alt="phone svg"
-                className="absolute top-0 left-0 w-full h-auto z-0 motion-translate-x-loop-[0%] motion-translate-y-loop-[-7%] motion-duration-[375ms] motion-duration-[1000ms]/translate motion-ease-spring-smooth"
+                className="absolute top-0 left-0 w-full h-auto z-0 motion-translate-x-loop-[0%] motion-translate-y-loop-[-7%] motion-duration-[375ms] motion-duration-[1000ms]/translate motion-ease-spring-smooth group-hover:motion-duration-[200ms]/translate "
               />
               <img
                 src={realTimeTrackingWoPin}
@@ -70,13 +70,13 @@ const Features = () => {
             </p>
           </div>
         </div>
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 group">
           <a href="#">
             <div className="relative w-auto h-autox` aspect-w-643 aspect-h-360">
               <img
                 src={discountBg}
                 alt="phone svg"
-                className="absolute top-0 left-0 w-full h-auto z-0 motion-opacity-loop-0 motion-duration-1500"
+                className="absolute top-0 left-0 w-full h-auto z-0 motion-opacity-loop-0 motion-duration-1500 group-hover:motion-duration-200 "  
               />
               <img
                 src={discountNoBg}

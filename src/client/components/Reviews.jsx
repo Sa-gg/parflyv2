@@ -17,7 +17,7 @@ const Reviews = () => {
       </div>
 
       <div class="gap-8 space-y-8 md:columns-2 lg:columns-3 px-[5vw]">
-        <div class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-gray-600/10 flex flex-col ">
+        <div class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-gray-600/10 flex flex-col dark:bg-gray-800 dark:border-gray-700 ">
           <div class="flex gap-4 items-start">
             <img
               class="w-12 h-12 rounded-full"
@@ -29,7 +29,7 @@ const Reviews = () => {
             />
             <div class="flex-1 flex justify-between items-start">
               <div>
-                <h6 class="text-lg font-medium text-gray-700">Ravi Kumar</h6>
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Ravi Kumar</h6>
                 <p class="text-sm text-gray-500">Driver</p>
               </div>
               <a
@@ -93,7 +93,7 @@ const Reviews = () => {
           </p>
         </div>
 
-        <div class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-gray-600/10 flex flex-col">
+        <div class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-gray-600/10 flex flex-col dark:bg-gray-800 dark:border-gray-700">
           <div class="flex gap-4 items-start">
             <img
               class="w-12 h-12 rounded-full"
@@ -105,7 +105,7 @@ const Reviews = () => {
             />
             <div class="flex-1 flex justify-between items-start">
               <div>
-                <h6 class="text-lg font-medium text-gray-700">Anjali Sharma</h6>
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Anjali Sharma</h6>
                 <p class="text-sm text-gray-500">Customer</p>
               </div>
               <a
@@ -169,7 +169,7 @@ const Reviews = () => {
           </p>
         </div>
 
-        <div class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-gray-600/10 flex flex-col">
+        <div class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-gray-600/10 flex flex-col dark:bg-gray-800 dark:border-gray-700">
           <div class="flex gap-4 items-start">
             <img
               class="w-12 h-12 rounded-full"
@@ -181,7 +181,7 @@ const Reviews = () => {
             />
             <div class="flex-1 flex justify-between items-start">
               <div>
-                <h6 class="text-lg font-medium text-gray-700">Vijay Singh</h6>
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Vijay Singh</h6>
                 <p class="text-sm text-gray-500">Driver</p>
               </div>
               <a
@@ -245,7 +245,7 @@ const Reviews = () => {
           </p>
         </div>
 
-        <div class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-gray-600/10 flex flex-col">
+        <div class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-gray-600/10 flex flex-col dark:bg-gray-800 dark:border-gray-700">
           <div class="flex gap-4 items-start">
             <img
               class="w-12 h-12 rounded-full"
@@ -257,7 +257,7 @@ const Reviews = () => {
             />
             <div class="flex-1 flex justify-between items-start">
               <div>
-                <h6 class="text-lg font-medium text-gray-700">Priya Patel</h6>
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Priya Patel</h6>
                 <p class="text-sm text-gray-500">Customer</p>
               </div>
               <a
@@ -321,7 +321,7 @@ const Reviews = () => {
           </p>
         </div>
 
-        <div class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-gray-600/10 flex flex-col">
+        <div class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-gray-600/10 flex flex-col dark:bg-gray-800 dark:border-gray-700">
           <div class="flex gap-4 items-start">
             <img
               class="w-12 h-12 rounded-full"
@@ -333,7 +333,7 @@ const Reviews = () => {
             />
             <div class="flex-1 flex justify-between items-start">
               <div>
-                <h6 class="text-lg font-medium text-gray-700">Arjun Mehta</h6>
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Arjun Mehta</h6>
                 <p class="text-sm text-gray-500">Driver</p>
               </div>
               <a
@@ -397,7 +397,7 @@ const Reviews = () => {
           </p>
         </div>
 
-        <div class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-gray-600/10 flex flex-col">
+        <div class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-gray-600/10 flex flex-col dark:bg-gray-800 dark:border-gray-700">
           <div class="flex gap-4 items-start">
             <img
               class="w-12 h-12 rounded-full"
@@ -409,7 +409,7 @@ const Reviews = () => {
             />
             <div class="flex-1 flex justify-between items-start">
               <div>
-                <h6 class="text-lg font-medium text-gray-700">Sneha Rao</h6>
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Sneha Rao</h6>
                 <p class="text-sm text-gray-500">Customer</p>
               </div>
               <a

@@ -1,14 +1,16 @@
 import React from "react";
 import Logo from "../assets/img/logo.png";
+import { LuEye,  LuEyeOff } from "react-icons/lu";
 
 const Login = () => {
   return (
     <div className="flex justify-center items-center flex-col flex-grow py-12 h-screen px-2">
       <div className="border rounded-md p-8 w-full max-w-sm shadow-lg bg-white">
-        <div className="flex items-center justify-center gap-0 mb-6">
+        <a href="/" className="flex items-center justify-center gap-0 mb-6">
+          
           <img src={Logo} alt="" className="h-[40px] " />
           <p className="text-primary text-xl italic font-black">PARFLY</p>
-        </div>
+        </a>
 
         <form action="#">
           <div className="mb-4">
@@ -17,7 +19,7 @@ const Login = () => {
             </label>
             <input
               type="text"
-              className="w-full border border-t-0 border-r-0 border-l-0 border-b-1  border-b-gray-300 outline-none py-2 text-text text-xs"
+              className="w-full border border-t-0 border-r-0 border-l-0 border-b-1  border-b-gray-300 outline-none py-2 text-gray-700 text-xs"
               placeholder="Enter your email"
             />
           </div>
@@ -26,16 +28,24 @@ const Login = () => {
             <label className="block text-xs font-medium mb-1 text-text">
               Password
             </label>
+
+            <div className="relative">
             <input
               type="password"
-              className="w-full border border-t-0 border-r-0 border-l-0 border-b-1  border-b-gray-300 outline-none py-2 text-text text-xs"
+              className="w-full border border-t-0 border-r-0 border-l-0 border-b-1  border-b-gray-300 outline-none py-2 text-gray-700 text-xs relative"
               placeholder="Enter password"
-            />
+            > </input>
+              <LuEye className="absolute top-2 right-3 text-gray-700" />
+
+            </div>
+            
+           
+       
           </div>
 
           <div className="flex justify-between items-center text-xs mb-6">
             <label className="flex items-center text-text">
-              <input type="checkbox" className="mr-2 text-text" />
+              <input type="checkbox" className="mr-2 text-primary" />
               Remember Me
             </label>
             <a href="#" className="text-primary hover:underline">
@@ -52,7 +62,7 @@ const Login = () => {
 
           <p className="text-xs text-center mt-4 text-text">
             Don’t have an account?&nbsp;
-            <a href="/register" className="text-primary hover:underline">
+            <a href="/register" className="text-primary hover:underline font-semibold">
               Create a free account
             </a>
           </p>

@@ -1,14 +1,15 @@
 import React from "react";
 import Logo from "../assets/img/logo.png";
+import { LuEye, LuEyeOff } from "react-icons/lu";
 
 const Register = () => {
   return (
     <div className="flex justify-center items-center flex-col flex-grow py-12 h-screen px-2">
       <div className="border rounded-md p-8 w-full max-w-sm shadow-lg bg-white">
-        <div className="flex items-center justify-center mb-6">
+        <a  href="/" className="flex items-center justify-center mb-6">
           <img src={Logo} alt="" className="h-[40px] " />
           <p className="text-primary text-xl font-black italic">PARFLY</p>
-        </div>
+        </a>
 
         <form action="#">
           <div className="mb-4">
@@ -17,7 +18,7 @@ const Register = () => {
             </label>
             <input
               type="text"
-              className="w-full border border-t-0 border-r-0 border-l-0 border-b-1  border-b-gray-300 outline-none py-2 text-text text-xs"
+              className="w-full border border-t-0 border-r-0 border-l-0 border-b-1  border-b-gray-300 outline-none py-2 text-gray-700 text-xs"
               placeholder="Enter your email"
             />
           </div>
@@ -28,8 +29,8 @@ const Register = () => {
             </label>
             <input
               type="text"
-              className="w-full border border-t-0 border-r-0 border-l-0 border-b-1  border-b-gray-300 outline-none py-2 text-text text-xs"
-              placeholder="Phone Number"
+              className="w-full border border-t-0 border-r-0 border-l-0 border-b-1  border-b-gray-300 outline-none py-2 text-gray-700 text-xs"
+              placeholder="Phone number"
             />
           </div>
 
@@ -37,19 +38,23 @@ const Register = () => {
             <label className="block text-xs font-medium mb-1 text-text">
               Password
             </label>
-            <input
-              type="password"
-              className="w-full border border-t-0 border-r-0 border-l-0 border-b-1  border-b-gray-300 outline-none py-2 text-text text-xs"
-              placeholder="Enter password"
-            />
+            <div className="relative">
+              <input
+                type="password"
+                className="w-full border border-t-0 border-r-0 border-l-0 border-b-1  border-b-gray-300 outline-none py-2 text-gray-700 text-xs relative"
+                placeholder="Password (min 6 characters)"
+              />
+                
+              <LuEye className="absolute top-2 right-3 text-gray-700" />
+            </div>
           </div>
 
           <div className="flex justify-between items-center text-xs mb-2">
             <label className="flex items-center text-text">
               <input type="checkbox" className="mr-2 text-primary self-start" />
               <span>
-                I’d like to receive offers and promotions from Parfly. I've
-                read and agreed to the Direct Marketing terms in the{" "}
+                I’d like to receive offers and promotions from Parfly. I've read
+                and agreed to the Direct Marketing terms in the{" "}
                 <a href="" className="inline text-primary">
                   Privacy Policy
                 </a>
@@ -59,9 +64,9 @@ const Register = () => {
           </div>
 
           <label className="text-[.60rem] text-text flex items-center justify-center mb-5">
-            <span className="text-center text-[.60rem]"> 
+            <span className="text-center text-[.60rem]">
               By clicking Sign Up below, you've read the full text and agreed to
-              the {" "}
+              the{" "}
               <a href="" className="inline text-primary">
                 Terms and Condition
               </a>{" "}
@@ -79,8 +84,6 @@ const Register = () => {
           >
             Sign Up For Free
           </button>
-
-          
         </form>
 
         <div className="flex items-center my-3">
@@ -109,11 +112,11 @@ const Register = () => {
       </div>
 
       <p className="text-xs text-center mt-2 text-text">
-            Already have an account?&nbsp;
-            <a href="/login" className="text-primary hover:underline">
-              Login
-            </a>
-          </p>
+        Already have an account?&nbsp;
+        <a href="/login" className="text-primary hover:underline font-semibold">
+          Login
+        </a>
+      </p>
     </div>
   );
 };

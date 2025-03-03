@@ -3,13 +3,13 @@ import React from "react";
 const Faq = () => {
   return (
     <section id="faq">
-      <div class="py-4 bg-white">
+      <div class="py-4 bg-white dark:bg-gray-800">
         <div class="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between">
           <div class="text-center">
             <p class="mt-4 text-sm leading-7 text-gray-500 font-regular">
               F.A.Q
             </p>
-            <h3 class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-800">
+            <h3 class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-800 dark:text-white">
               Frequently Asked <span class="text-primary">Questions</span>
             </h3>
           </div>
@@ -40,7 +40,7 @@ const Faq = () => {
                       </g>
                     </svg>
                   </div>
-                  <div class="bg-gray-100 p-5 px-10 w-full flex items-center">
+                  <div class="bg-gray-100 rounded-lg p-5 px-10 w-full flex items-center">
                     <h4 class="text-md leading-6 font-medium text-gray-800">
                       How do I place a delivery request on Parfly?
                     </h4>
@@ -48,8 +48,8 @@ const Faq = () => {
                 </div>
 
                 <div class="flex flex-row items-start">
-                  <div class="bg-primary-lighter p-5 px-10 w-full flex items-center">
-                    <p class="text-gray-700 text-sm">
+                  <div class="bg-primary-lighter rounded-lg p-5 px-10 w-full flex items-center ">
+                    <p class="text-gray-700 text-sm dark:text-white">
                       To place a delivery request, simply enter the pickup and
                       drop-off locations, provide package details, and confirm
                       your request. A nearby driver will be assigned to pick up
@@ -128,7 +128,7 @@ const Faq = () => {
                       </g>
                     </svg>
                   </div>
-                  <div class="bg-gray-100 p-5 px-10 w-full flex items-center">
+                  <div class="bg-gray-100 rounded-lg p-5 px-10 w-full flex items-center">
                     <h4 class="text-md leading-6 font-medium text-gray-800">
                       Can I track my package in real time?
                     </h4>
@@ -136,8 +136,8 @@ const Faq = () => {
                 </div>
 
                 <div class="flex flex-row items-start">
-                  <div class="bg-primary-lighter p-5 px-10 w-full flex items-center">
-                    <p class="text-gray-700 text-sm">
+                  <div class="bg-primary-lighter rounded-lg p-5 px-10 w-full flex items-center ">
+                    <p class="text-gray-700 text-sm dark:text-white">
                       Yes! Once your delivery is confirmed, you can track your
                       package in real time using our live tracking feature,
                       powered by TomTom. This allows you to see the driver’s
@@ -216,7 +216,7 @@ const Faq = () => {
                       </g>
                     </svg>
                   </div>
-                  <div class="bg-gray-100 p-5 px-10 w-full flex items-center">
+                  <div class="bg-gray-100 rounded-lg p-5 px-10 w-full flex items-center">
                     <h4 class="text-md leading-6 font-medium text-gray-800">
                       What payment methods does Parfly accept?
                     </h4>
@@ -224,8 +224,8 @@ const Faq = () => {
                 </div>
 
                 <div class="flex flex-row items-start">
-                  <div class="bg-primary-lighter p-5 px-10 w-full flex items-center">
-                    <p class="text-gray-700 text-sm">
+                  <div class="bg-primary-lighter rounded-lg p-5 px-10 w-full flex items-center ">
+                    <p class="text-gray-700 text-sm dark:text-white">
                       Parfly currently only supports Cash on Delivery (COD). You
                       will pay the driver directly upon receiving your package.
                     </p>
