@@ -77,37 +77,37 @@ const Footer = () => {
 
   return (
     <footer>
-      <div class="mt-8 bg-white pt-9 dark:bg-gray-800">
-        <div class="mx-auto w-full max-w-[1166px] px-4 xl:px-0">
-          <div class="flex flex-col justify-between sm:px-[18px] md:flex-row md:px-10">
-            <div class="md:w-[316px]">
-              <p class="text-[18px] font-medium text-black dark:text-white">
+      <div className="mt-8 bg-white pt-9 dark:bg-gray-800">
+        <div className="mx-auto w-full max-w-[1166px] px-4 xl:px-0">
+          <div className="flex flex-col justify-between sm:px-[18px] md:flex-row md:px-10">
+            <div className="md:w-[316px]">
+              <p className="text-[18px] font-medium text-black dark:text-white">
                 <img src={Logo} alt="" className="h-8 inline mr-2"/>
-                <h1 class="text-darkBlue font-extrabold inline">
-                  <span class="text-primary">PAR</span>FLY
+                <h1 className="text-primary font-extrabold inline">
+                  <span className="text-primary">PAR</span>FLY
                 </h1>
               </p>
-              <p class="mt-[18px] text-[15px] font-normal text-black/[80%] dark:text-white/[80%]">
+              <p className="mt-[18px] text-[15px] font-normal text-black/[80%] dark:text-white/[80%]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
                 fugit non. Incidunt dolorum adipisci, tempore asperiores nemo
                 odio facere officiis enim animi placeat eaque nesciunt alias
                 beatae id, at dicta.
               </p>
-              <div class="mt-[18px] flex gap-4">
-                <a class="hover:scale-110" target="_blank" href="#">
+              <div className="mt-[18px] flex gap-4">
+                <a className="hover:scale-110" target="_blank" href="#">
                   <FaFacebook  className="dark:text-white"/>
                 </a>
-                <a class="hover:scale-110" target="_blank" href="/">
+                <a className="hover:scale-110" target="_blank" href="/">
                   <FaLinkedinIn  className="dark:text-white"/>
                 </a>
-                <a class="hover:scale-110" target="_blank" href="/">
+                <a className="hover:scale-110" target="_blank" href="/">
                   <FaInstagram className="dark:text-white"/>
                 </a>
-                <a class="hover:scale-110" target="_blank" href="">
+                <a className="hover:scale-110" target="_blank" href="">
                   <FaTwitter className="dark:text-white"/>
                 </a>
                 <a
-                  class="hover:scale-110"
+                  className="hover:scale-110"
                   target="_blank"
                   href="https://www.youtube.com/"
                 >
@@ -115,105 +115,105 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <div class="md:w-[316px]">
-              <div class="mt-[23px] flex">
-                <div class="flex h-[38px] w-[38px] items-center justify-center rounded-[75%]">
+            <div className="md:w-[316px]">
+              <div className="mt-[23px] flex">
+                <div className="flex h-[38px] w-[38px] items-center justify-center rounded-[75%]">
                   <FaPhone className="dark:text-white"/>
                 </div>
-                <div class="ml-[18px]">
+                <div className="ml-[18px]">
                   <a
                     href="tel:+911800123444"
-                    class="font-Inter text-[14px] font-medium text-black dark:text-white"
+                    className="font-Inter text-[14px] font-medium text-black dark:text-white"
                   >
                     +91 1800123444
                   </a>
-                  <p class="font-Inter text-[12px] font-medium text-black dark:text-white">
+                  <p className="font-Inter text-[12px] font-medium text-black dark:text-white">
                     Support Number
                   </p>
                 </div>
               </div>
-              <div class="mt-[23px] flex">
-                <div class="flex h-[38px] w-[38px] items-center justify-center rounded-[75%]">
+              <div className="mt-[23px] flex">
+                <div className="flex h-[38px] w-[38px] items-center justify-center rounded-[75%]">
                   <MdEmail className="dark:text-white"/>
                 </div>
-                <div class="ml-[18px]">
+                <div className="ml-[18px]">
                   <a
                     href="mailto:help@lorem.com"
-                    class="font-Inter text-[14px] font-medium text-black dark:text-white"
+                    className="font-Inter text-[14px] font-medium text-black dark:text-white"
                   >
                     help@lorem.com
                   </a>
-                  <p class="font-Inter text-[12px] font-medium text-black dark:text-white">
+                  <p className="font-Inter text-[12px] font-medium text-black dark:text-white">
                     Support Email
                   </p>
                 </div>
               </div>
-              <div class="mt-[23px] flex">
-                <div class="flex h-[38px] w-[38px] items-center justify-center rounded-[75%]">
+              <div className="mt-[23px] flex">
+                <div className="flex h-[38px] w-[38px] items-center justify-center rounded-[75%]">
                   <FaLocationDot className="dark:text-white"/>
                 </div>
-                <div class="ml-[18px]">
+                <div className="ml-[18px]">
                   <a
                     href="mailto:help@lorem.com"
-                    class="font-Inter text-[14px] font-medium text-black dark:text-white"
+                    className="font-Inter text-[14px] font-medium text-black dark:text-white"
                   >
                     Bacolod, Negros Occidental, 6100, Philippines
                   </a>
-                  <p class="font-Inter text-[12px] font-medium text-black dark:text-white">
+                  <p className="font-Inter text-[12px] font-medium text-black dark:text-white">
                     Address
                   </p>
                 </div>
               </div>
             </div>
-            <div class="mt-6 flex w-full flex-col justify-between text-black sm:flex-row md:mt-0 md:max-w-[341px]">
-              <div class="">
-                <p class="text-deutziawhite font-inter text-[18px] font-medium leading-normal dark:text-white">
+            <div className="mt-6 flex w-full flex-col justify-between text-black sm:flex-row md:mt-0 md:max-w-[341px]">
+              <div className="">
+                <p className="text-deutziawhite font-inter text-[18px] font-medium leading-normal dark:text-white">
                   Pages
                 </p>
                 <ul>
-                  <li class="mt-[15px]">
+                  <li className="mt-[15px]">
                     <a
-                      class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold dark:text-white"
+                      className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold dark:text-white"
                       href="/"
                     >
                       Home
                     </a>
                   </li>
-                  <li class="mt-[15px]">
+                  <li className="mt-[15px]">
                     <a
-                      class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold dark:text-white"
+                      className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold dark:text-white"
                       href="/our-tutors"
                     >
                       Business
                     </a>
                   </li>
-                  <li class="mt-[15px]">
+                  <li className="mt-[15px]">
                     <a
-                      class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold dark:text-white"
+                      className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold dark:text-white"
                       href="/become-a-tutor"
                     >
                       Personal
                     </a>
                   </li>
-                  <li class="mt-[15px]">
+                  <li className="mt-[15px]">
                     <a
-                      class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold dark:text-white"
+                      className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold dark:text-white"
                       href="/plans-and-pricing"
                     >
                       Driver
                     </a>
                   </li>
-                  <li class="mt-[15px]">
+                  <li className="mt-[15px]">
                     <a
-                      class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold dark:text-white"
+                      className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold dark:text-white"
                       href="/terms-and-conditions"
                     >
                       Terms and conditions
                     </a>
                   </li>
-                  <li class="mt-[15px]">
+                  <li className="mt-[15px]">
                     <a
-                      class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold dark:text-white"
+                      className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold dark:text-white"
                       href="/privacy-policy"
                     >
                       Privcay policy
@@ -221,11 +221,11 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div class="mt-6 flex flex-col gap-4 sm:mt-0">
-                <p class="text-deutziawhite font-inter text-[18px] font-medium dark:text-white">
+              <div className="mt-6 flex flex-col gap-4 sm:mt-0">
+                <p className="text-deutziawhite font-inter text-[18px] font-medium dark:text-white">
                   Download the app
                 </p>
-                <div class="flex gap-4 sm:flex-col">
+                <div className="flex gap-4 sm:flex-col">
                   <a
                     href=""
                     onClick={(event) => {
@@ -241,9 +241,9 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <hr class="mt-[30px] text-black dark:text-white" />
-          <div class="flex items-center justify-center pb-8 pt-[9px] md:py-8">
-            <p class="text-[10px] font-normal text-black md:text-[12px] dark:text-white">
+          <hr className="mt-[30px] text-black dark:text-white" />
+          <div className="flex items-center justify-center pb-8 pt-[9px] md:py-8">
+            <p className="text-[10px] font-normal text-black md:text-[12px] dark:text-white">
               © Copyright 2024 All Rights Reserved by Parfly. PVT. LTD
             </p>
           </div>
