@@ -34,7 +34,7 @@ const Login = () => {
               type="password"
               className="w-full border border-t-0 border-r-0 border-l-0 border-b-1  border-b-gray-300 outline-none py-2 text-gray-700 text-xs relative"
               placeholder="Enter password"
-            > </input>
+            /> 
               <LuEye className="absolute top-2 right-3 text-gray-700" />
 
             </div>
