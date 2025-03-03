@@ -42,7 +42,7 @@ const Faq = () => {
                   </div>
                   <div class="bg-gray-100 p-5 px-10 w-full flex items-center">
                     <h4 class="text-md leading-6 font-medium text-gray-800">
-                      What could possibly be your first question?
+                      How do I place a delivery request on Parfly?
                     </h4>
                   </div>
                 </div>
@@ -50,10 +50,10 @@ const Faq = () => {
                 <div class="flex flex-row items-start">
                   <div class="bg-primary-lighter p-5 px-10 w-full flex items-center">
                     <p class="text-gray-700 text-sm">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Maiores impedit perferendis suscipit eaque, iste dolor
-                      cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet
-                      consectetur adipisicing elit.
+                      To place a delivery request, simply enter the pickup and
+                      drop-off locations, provide package details, and confirm
+                      your request. A nearby driver will be assigned to pick up
+                      and deliver your package efficiently.
                     </p>
                   </div>
                   <div class="hidden sm:flex items-center justify-center p-3 ml-3 rounded-full bg-primary text-white border-4 border-white text-xl font-semibold">
@@ -130,7 +130,7 @@ const Faq = () => {
                   </div>
                   <div class="bg-gray-100 p-5 px-10 w-full flex items-center">
                     <h4 class="text-md leading-6 font-medium text-gray-800">
-                      What could possibly be your first question?
+                      Can I track my package in real time?
                     </h4>
                   </div>
                 </div>
@@ -138,10 +138,10 @@ const Faq = () => {
                 <div class="flex flex-row items-start">
                   <div class="bg-primary-lighter p-5 px-10 w-full flex items-center">
                     <p class="text-gray-700 text-sm">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Maiores impedit perferendis suscipit eaque, iste dolor
-                      cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet
-                      consectetur adipisicing elit.
+                      Yes! Once your delivery is confirmed, you can track your
+                      package in real time using our live tracking feature,
+                      powered by TomTom. This allows you to see the driver’s
+                      location and estimated arrival time.
                     </p>
                   </div>
                   <div class="hidden sm:flex items-center justify-center p-3 ml-3 rounded-full bg-primary text-white border-4 border-white text-xl font-semibold">
@@ -218,7 +218,7 @@ const Faq = () => {
                   </div>
                   <div class="bg-gray-100 p-5 px-10 w-full flex items-center">
                     <h4 class="text-md leading-6 font-medium text-gray-800">
-                      What could possibly be your first question?
+                      What payment methods does Parfly accept?
                     </h4>
                   </div>
                 </div>
@@ -226,10 +226,8 @@ const Faq = () => {
                 <div class="flex flex-row items-start">
                   <div class="bg-primary-lighter p-5 px-10 w-full flex items-center">
                     <p class="text-gray-700 text-sm">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Maiores impedit perferendis suscipit eaque, iste dolor
-                      cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet
-                      consectetur adipisicing elit.
+                      Parfly currently only supports Cash on Delivery (COD). You
+                      will pay the driver directly upon receiving your package.
                     </p>
                   </div>
                   <div class="hidden sm:flex items-center justify-center p-3 ml-3 rounded-full bg-primary text-white border-4 border-white text-xl font-semibold">
