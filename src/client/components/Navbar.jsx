@@ -281,7 +281,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         >
           <ul
             id="navbar-ul"
-            className="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg lg:space-x-4 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0  dark:border-gray-700 ml-[2rem]"
+            className="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg lg:space-x-4 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0  dark:border-gray-700 ml-[0] lg:ml-[2rem]"
           >
             <li>
               <NavLink
