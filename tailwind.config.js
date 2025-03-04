@@ -24,7 +24,7 @@ export default {
           DEFAULT: '#7a7a7a',
         },
         bg: {
-          DEAULT: '#F2F2F2'
+          DEFAULT: '#F2F2F2'
         },
         darkBlue: {
           DEFAULT: '#003366'

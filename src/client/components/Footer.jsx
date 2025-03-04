@@ -233,7 +233,7 @@ const Footer = () => {
                       event.preventDefault();
                       handleInstallClick();
                     }}
-                    className="flex gap-2 items-center justify-center w-full py-3 text-base font-medium leading-6 text-primary transition duration-150 ease-in-out bg-bg border border-transparent rounded-md hover:text-primary-dark focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg"
+                    className="flex gap-2 items-center justify-center w-full py-3 text-base font-medium leading-6 text-primary transition duration-150 ease-in- border border-transparent rounded-md hover:text-primary-dark focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg"
                   >
                     <MdDownload className="" />
                     Install PWA App

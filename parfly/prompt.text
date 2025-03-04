@@ -1,0 +1,26 @@
+Record a Video Presentation (5-10 minutes) where you:
+  a. Showcase your landing page, login, and signup screens, navigating through each section.
+  b. Explain the design choices for layout, colors, typography, and visual hierarchy.
+  c. Present your logo and describe how it represents the over all identity of your system
+  d. Discuss how your design ensures a smooth user experience.
+
+Answer the following question in your presentation:
+"How does your design ensure a smooth user experience across the landing page, login, and signup process while maintaining consistency with the logo and overall identity of your system? Identify any challenges you faced and how you addressed them."
+
+Our App:
+PARFLY A Web-Based Courier Managment System 
+- a comprehensive delivery platform designed to connect businesses and individuals with drivers for fast and reliable delivery services. The platform aims to streamline the logistics process, making it easier for users to manage and track their deliveries. 
+
+LOGO
+primary: #ff6600
+accent: #772f00
+
+
+COLOR SCHEME
+primary: #ff6600
+background: #F2F2F2, white
+text-color: #7a7a7a, black
+
+
+
+
