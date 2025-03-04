@@ -282,7 +282,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <li>
               <NavLink
                 to="/business"
-                className="block py-2 px-3 lg:p-0 text-text rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-[#FF6600] dark:text-white lg:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] lg:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 lg:p-0 text-text rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-[#FF6600] hover:text-[#FF6600] dark:text-white lg:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] lg:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Business
               </NavLink>
@@ -290,7 +290,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <li>
               <NavLink
                 to="/personal"
-                className="block py-2 px-3 lg:p-0 text-text rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-[#FF6600] dark:text-white lg:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] lg:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 lg:p-0 text-text rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-[#FF6600] hover:text-[#FF6600] dark:text-white lg:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] lg:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Personal
               </NavLink>
@@ -298,7 +298,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <li>
               <NavLink
                 to="/driver"
-                className="block py-2 px-3 lg:p-0 text-text rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-[#FF6600] dark:text-white lg:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] lg:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 lg:p-0 text-text rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-[#FF6600] hover:text-[#FF6600] dark:text-white lg:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] lg:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Driver
               </NavLink>
@@ -307,7 +307,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               <button
                 id="mega-menu-dropdown-button"
                 data-dropdown-toggle="mega-menu-dropdown"
-                className="flex items-center justify-between w-full py-2 px-3 font-medium text-text border-b border-gray-100 lg:w-auto hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#FF6600] lg:p-0 dark:text-white lg:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] lg:dark:hover:bg-transparent dark:border-gray-700"
+                className="flex items-center justify-between w-full py-2 px-3 font-medium text-text border-b border-gray-100 lg:w-auto hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#FF6600] hover:text-[#FF6600] lg:p-0 dark:text-white lg:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] lg:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Company
                 <svg
@@ -406,7 +406,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <li>
               <NavLink
                 to="/team"
-                className="block py-2 px-3 lg:p-0 text-text rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-[#FF6600] dark:text-white lg:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] lg:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 lg:p-0 text-text rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-[#FF6600] hover:text-[#FF6600] dark:text-white lg:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] lg:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Team
               </NavLink>

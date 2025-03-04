@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { toast } from 'react-toastify'; 
+import { toast } from "react-toastify";
 import {
   FaFacebook,
   FaLinkedinIn,
@@ -12,68 +12,68 @@ import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdDownload } from "react-icons/md";
-import Logo from '../../assets/img/logo.png'
+import Logo from "../../assets/img/logo.png";
 
 const Footer = () => {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
-    const [isInstalled, setIsInstalled] = useState(false);
-  
-    useEffect(() => {
-      const handleBeforeInstallPrompt = (e) => {
-        e.preventDefault();
-        console.log("beforeinstallprompt event fired");
-        setDeferredPrompt(e); // Store in state
-      };
-  
-      window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
-  
-      window.addEventListener("appinstalled", () => {
-        console.log("PWA was installed");
-        setIsInstalled(true);
-        setDeferredPrompt(null); // Clear after install
-      });
-  
-      if (window.matchMedia("(display-mode: standalone)").matches) {
-        setIsInstalled(true);
-      }
-  
-      return () => {
-        window.removeEventListener(
-          "beforeinstallprompt",
-          handleBeforeInstallPrompt
-        );
-        window.removeEventListener("appinstalled", () => setIsInstalled(true));
-      };
-    }, []);
-  
-    const handleInstallClick = () => {
-      console.log("Install button clicked");
-  
-      if (isInstalled) {
-        openPWA();
-        return;
-      }
-  
-      if (deferredPrompt) {
-        deferredPrompt.prompt();
-        deferredPrompt.userChoice.then((choiceResult) => {
-          if (choiceResult.outcome === "accepted") {
-            console.log("User accepted the install prompt");
-          } else {
-            console.log("User dismissed the install prompt");
-          }
-          setDeferredPrompt(null);
-        });
-      } else {
-        console.log("No deferred prompt available");
-        openPWA(); // Try opening if installed
-      }
+  const [isInstalled, setIsInstalled] = useState(false);
+
+  useEffect(() => {
+    const handleBeforeInstallPrompt = (e) => {
+      e.preventDefault();
+      console.log("beforeinstallprompt event fired");
+      setDeferredPrompt(e); // Store in state
     };
 
-     const openPWA = () => {
-        // window.location.href = `intent://${window.location.host}/#Intent;scheme=https;action=android.intent.action.VIEW;category=android.intent.category.DEFAULT;end;`;
-        toast.success('App is already installed');
-      };
+    window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
+
+    window.addEventListener("appinstalled", () => {
+      console.log("PWA was installed");
+      setIsInstalled(true);
+      setDeferredPrompt(null); // Clear after install
+    });
+
+    if (window.matchMedia("(display-mode: standalone)").matches) {
+      setIsInstalled(true);
+    }
+
+    return () => {
+      window.removeEventListener(
+        "beforeinstallprompt",
+        handleBeforeInstallPrompt
+      );
+      window.removeEventListener("appinstalled", () => setIsInstalled(true));
+    };
+  }, []);
+
+  const handleInstallClick = () => {
+    console.log("Install button clicked");
+
+    if (isInstalled) {
+      openPWA();
+      return;
+    }
+
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === "accepted") {
+          console.log("User accepted the install prompt");
+        } else {
+          console.log("User dismissed the install prompt");
+        }
+        setDeferredPrompt(null);
+      });
+    } else {
+      console.log("No deferred prompt available");
+      openPWA(); // Try opening if installed
+    }
+  };
+
+  const openPWA = () => {
+    // window.location.href = `intent://${window.location.host}/#Intent;scheme=https;action=android.intent.action.VIEW;category=android.intent.category.DEFAULT;end;`;
+    toast.success("App is already installed");
+  };
 
   return (
     <footer>
@@ -82,43 +82,44 @@ const Footer = () => {
           <div className="flex flex-col justify-between sm:px-[18px] md:flex-row md:px-10">
             <div className="md:w-[316px]">
               <p className="text-[18px] font-medium text-black dark:text-white">
-                <img src={Logo} alt="" className="h-8 inline mr-2"/>
+                <img src={Logo} alt="" className="h-8 inline mr-2" />
                 <h1 className="text-primary font-extrabold inline">
                   <span className="text-primary">PAR</span>FLY
                 </h1>
               </p>
+
               <p className="mt-[18px] text-[15px] font-normal text-black/[80%] dark:text-white/[80%]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-                fugit non. Incidunt dolorum adipisci, tempore asperiores nemo
-                odio facere officiis enim animi placeat eaque nesciunt alias
-                beatae id, at dicta.
+                Enhance your experience with Parfly. Access all features
+                seamlessly, stay updated, and manage everything effortlessly.
+                Download the Parfly app now for convenience at your fingertips.
               </p>
-              <div className="mt-[18px] flex gap-4">
+
+              <div className="mt-[18px] flex gap-4 ">
                 <a className="hover:scale-110" target="_blank" href="#">
-                  <FaFacebook  className="dark:text-white"/>
+                  <FaFacebook className="dark:text-white" />
                 </a>
                 <a className="hover:scale-110" target="_blank" href="/">
-                  <FaLinkedinIn  className="dark:text-white"/>
+                  <FaLinkedinIn className="dark:text-white" />
                 </a>
                 <a className="hover:scale-110" target="_blank" href="/">
-                  <FaInstagram className="dark:text-white"/>
+                  <FaInstagram className="dark:text-white" />
                 </a>
                 <a className="hover:scale-110" target="_blank" href="">
-                  <FaTwitter className="dark:text-white"/>
+                  <FaTwitter className="dark:text-white" />
                 </a>
                 <a
                   className="hover:scale-110"
                   target="_blank"
                   href="https://www.youtube.com/"
                 >
-                  <FaYoutube className="dark:text-white"/>
+                  <FaYoutube className="dark:text-white" />
                 </a>
               </div>
             </div>
             <div className="md:w-[316px]">
               <div className="mt-[23px] flex">
                 <div className="flex h-[38px] w-[38px] items-center justify-center rounded-[75%]">
-                  <FaPhone className="dark:text-white"/>
+                  <FaPhone className="dark:text-white" />
                 </div>
                 <div className="ml-[18px]">
                   <a
@@ -134,7 +135,7 @@ const Footer = () => {
               </div>
               <div className="mt-[23px] flex">
                 <div className="flex h-[38px] w-[38px] items-center justify-center rounded-[75%]">
-                  <MdEmail className="dark:text-white"/>
+                  <MdEmail className="dark:text-white" />
                 </div>
                 <div className="ml-[18px]">
                   <a
@@ -150,7 +151,7 @@ const Footer = () => {
               </div>
               <div className="mt-[23px] flex">
                 <div className="flex h-[38px] w-[38px] items-center justify-center rounded-[75%]">
-                  <FaLocationDot className="dark:text-white"/>
+                  <FaLocationDot className="dark:text-white" />
                 </div>
                 <div className="ml-[18px]">
                   <a
@@ -221,8 +222,8 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="mt-6 flex flex-col gap-4 sm:mt-0">
-                <p className="text-deutziawhite font-inter text-[18px] font-medium dark:text-white">
+              <div className="mt-6 flex flex-col gap-0 sm:mt-0">
+                <p className="text-deutziawhite font-inter text-[18px] font-medium dark:text-white text-center font-semibold">
                   Download the app
                 </p>
                 <div className="flex gap-4 sm:flex-col">
@@ -234,7 +235,7 @@ const Footer = () => {
                     }}
                     className="flex gap-2 items-center justify-center w-full py-3 text-base font-medium leading-6 text-primary transition duration-150 ease-in-out bg-bg border border-transparent rounded-md hover:text-primary-dark focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg"
                   >
-                    <MdDownload className=""/>
+                    <MdDownload className="" />
                     Install PWA App
                   </a>
                 </div>
