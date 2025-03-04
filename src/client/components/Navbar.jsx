@@ -2,6 +2,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/img/logo.png";
 import DarkMode from "./DarkMode";
+import { MdLightMode } from "react-icons/md";
+import { MdDarkMode } from "react-icons/md";
+
 
 const Navbar = ({ darkMode, toggleDarkMode }) => {
   return (
@@ -15,7 +18,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           className="flex items-center space-x-0 rtl:space-x-reverse"
         >
           <img src={Logo} className="mr-3 h-[45px] " alt="Parfly Logo" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-primary dark:text-primary hidden sm:block">
+          <span className="self-center text-2xl font-semibold whitespace-nowrap text-primary dark:text-primary hidden sm:block ">
             Parfly
           </span>
         </NavLink>
@@ -23,9 +26,9 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           {/* Dark mode toggle button */}
           <button
             onClick={toggleDarkMode}
-            className="p-2 text-gray-800 dark:text-gray-200 bg-gray-200 dark:bg-gray-800 rounded"
+            className="p-2 text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 rounded"
           >
-            {darkMode ? "Light Mode" : "Dark Mode"}
+            {darkMode ? <MdLightMode /> : <MdDarkMode />}
           </button>
           <button
             id="language-dropdown-menu-btn"
@@ -274,7 +277,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         >
           <ul
             id="navbar-ul"
-            className="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg lg:space-x-4 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 dark:bg-gray-800 lg:dark:bg-gray-800 dark:border-gray-700"
+            className="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg lg:space-x-4 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0  dark:border-gray-700"
           >
             <li>
               <NavLink

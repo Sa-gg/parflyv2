@@ -11,7 +11,7 @@ const Register = () => {
           <p className="text-primary text-xl font-black italic">PARFLY</p>
         </a>
 
-        <form action="#">
+        <form action="/">
           <div className="mb-4">
             <label className="block text-xs font-medium mb-1 text-text">
               Phone number or email

@@ -12,7 +12,7 @@ const Login = () => {
           <p className="text-primary text-xl italic font-black">PARFLY</p>
         </a>
 
-        <form action="#">
+        <form action="/">
           <div className="mb-4">
             <label className="block text-xs font-medium mb-1 text-text">
               Phone number or email

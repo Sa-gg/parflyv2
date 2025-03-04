@@ -28,7 +28,6 @@ const ClientLayout = () => {
 
   return (
     <div className={`min-h-screen ${darkMode ? "dark" : ""}`}>
-      {/* Pass toggle function and state to Navbar */}
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Outlet />
     </div>
