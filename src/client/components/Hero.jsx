@@ -14,8 +14,8 @@ const Hero = () => {
 
   return (
     <>
-      <div className="relative flex flex-col items-center max-w-screen-xl px-10 mx-auto md:flex-row sm:px-6 md:py-[calc(77px_+_15vh)] py-[calc(77px_+_2vh)]">
-        <div className="flex items-center py-10 md:w-1/2 md:pb-20 md:pt-10 md:pr-0 z-10">
+      <div className="relative flex flex-col items-center max-w-screen-xl px-10 mx-auto lg:flex-row sm:px-6 lg:py-[calc(77px_+_15vh)] py-[calc(77px_+_2vh)]">
+        <div className="flex items-center py-10 lg:w-1/2 lg:pb-20 lg:pt-10 lg:pr-0 z-10">
           <div className="text-left">
             <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl motion-translate-x-in-[-11%] motion-translate-y-in-[-1%] motion-opacity-in-[0%] motion-blur-in-[5px] dark:text-white">
               Deliver
@@ -53,7 +53,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center pt-36 md:w-1/2 md:pb-20 md:pt-10">
+        <div className="flex items-center justify-center pt-36 lg:w-1/2 lg:pb-20 lg:pt-10">
           <img
             src={darkMode ? backgroundDark : background}
             alt="phone svg"
@@ -69,7 +69,10 @@ const Hero = () => {
             alt="delivery guy svg"
             className="w-[calc(24rem_+_10vw)] h-auto absolute motion-translate-x-in-[-104%] motion-translate-y-in-[0%] motion-opacity-in-[0%] motion-blur-in-[5px] motion-ease-spring-bouncy motion-rotate-loop-[-20deg] motion-loop-once motion-duration-[2000ms] motion-delay-[350ms] motion-delay-[500ms]/rotate"
           />
+     
+          
         </div>
+        
       </div>
     </>
   );

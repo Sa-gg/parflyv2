@@ -17,7 +17,7 @@ const Features = () => {
 
   return (
     <section id="features">
-      <h2 className="text-center text-primary font-bold text-2xl pt-[25vw] md:pt-0">
+      <h2 className="text-center text-primary font-bold text-2xl pt-[25vw] lg:pt-0">
         WHY CHOOSE US
       </h2>
       <p className="text-center text-text dark:text-gray-400 max-w-2xl mx-auto mt-2 hidden md:block">
