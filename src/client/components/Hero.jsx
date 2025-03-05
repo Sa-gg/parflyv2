@@ -53,7 +53,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center pt-36 lg:w-1/2 lg:pb-20 lg:pt-10">
+        <div className="flex items-center justify-center pt-36 lg:w-1/2 lg:pb-20 lg:pt-10 w-[100%] h-[100%] overflow-visible relative ">
           <img
             src={darkMode ? backgroundDark : background}
             alt="phone svg"
@@ -67,7 +67,7 @@ const Hero = () => {
           <img
             src={deliveryGuy}
             alt="delivery guy svg"
-            className="w-[calc(24rem_+_10vw)] h-auto absolute motion-translate-x-in-[-104%] motion-translate-y-in-[0%] motion-opacity-in-[0%] motion-blur-in-[5px] motion-ease-spring-bouncy motion-rotate-loop-[-20deg] motion-loop-once motion-duration-[2000ms] motion-delay-[350ms] motion-delay-[500ms]/rotate"
+            className="w-[calc(24rem_+_10vw)] h-auto absolute motion-translate-x-in-[-104%] motion-translate-y-in-[0%] motion-opacity-in-[0%] motion-blur-in-[5px] motion-ease-spring-bouncy motion-rotate-loop-[-20deg] motion-loop-once motion-duration-[2000ms] motion-delay-[350ms] motion-delay-[500ms]/rotate "
           />
      
           
