@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import download from "../../assets/download.svg";
 import { MdDownload } from "react-icons/md";
-import usePWAInstall from "../hooks/usePwaInstall";
+import usePWAInstall from "../hooks/usePWAInstall"
 
 const Download = () => {
   const { handleInstallClick } = usePWAInstall();
