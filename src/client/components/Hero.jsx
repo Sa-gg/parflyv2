@@ -5,7 +5,7 @@ import phone from "../../assets/phone.svg";
 import background from "../../assets/background.svg";
 import backgroundDark from "../../assets/backgroundDark.svg";
 import { MdDownload } from "react-icons/md";
-import usePWAInstall from "../hooks/usePwaInstall";
+import usePWAInstall from "../hooks/usePWAInstall";
 
 const Hero = () => {
   const context = useOutletContext();

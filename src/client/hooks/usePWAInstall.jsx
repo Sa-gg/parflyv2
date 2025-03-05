@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import { toast } from "react-toastify";
 
-const usePwaInstall = () => {
+const usePWAInstall = () => {
     const [deferredPrompt, setDeferredPrompt] = useState(null);
     const [isInstalled, setIsInstalled] = useState(false);
   
@@ -45,11 +46,12 @@ const usePwaInstall = () => {
           setDeferredPrompt(null);
         });
       } else {
-        toast.error("No install prompt available");
+        toast.success("App is already installed");
       }
     };
   
     return { handleInstallClick, isInstalled };
   };
 
-export default usePwaInstall
+
+export default usePWAInstall

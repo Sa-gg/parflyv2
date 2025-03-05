@@ -11,7 +11,7 @@ import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdDownload } from "react-icons/md";
 import Logo from "../../assets/img/logo.png";
-import usePWAInstall from "../hooks/usePwaInstall";
+import usePWAInstall from "../hooks/usePWAInstall";
 
 
 const Footer = () => {
