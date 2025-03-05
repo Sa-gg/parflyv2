@@ -1,7 +1,7 @@
 #   Ha?
 
-Hatkik
-Hatdog
-Hat...
-Ha
-Haduken
+Hatkik <br/>
+Hatdog  <br/>
+Hat...  <br/>
+Ha  <br/>
+Haduken  <br/>
