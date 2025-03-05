@@ -1,12 +1,20 @@
 import React from "react";
+import { useOutletContext } from "react-router-dom";
 import deliveryGuy from "../../assets/deliveryGuyWithLogo.svg";
 import background from "../../assets/background.svg";
 import realTimeTrackingWoPin from "../../assets/realtimeTrackingWoPin.svg";
 import pin from "../../assets/pin.svg";
 import discountBg from "../../assets/discountBg.svg";
 import discountNoBg from "../../assets/discountNoBg.svg";
+import backgroundDark from "../../assets/backgroundDark.svg";
+
+
 
 const Features = () => {
+  const context = useOutletContext();
+  const darkMode = context?.darkMode ?? false; 
+
+
   return (
     <section id="features">
       <h2 className="text-center text-primary font-bold text-2xl pt-[25vw] md:pt-0">
@@ -20,7 +28,7 @@ const Features = () => {
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 group">
           <div className="relative w-auto h-autox` aspect-w-643 aspect-h-360">
             <img
-              src={background}
+               src={darkMode ? backgroundDark : background}
               alt="phone svg"
               className="absolute top-0 left-0 w-full h-auto z-0"
             />
@@ -32,11 +40,11 @@ const Features = () => {
           </div>
 
           <div class="p-5 pb-0">
-            <a href="#">
+        
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-800 dark:text-white">
                 Fast Delivery
               </h5>
-            </a>
+          
             <p class="mb-3 font-normal text-text dark:text-gray-400">
               We prioritize speed to ensure your packages are delivered on time,
               every time.
@@ -44,7 +52,7 @@ const Features = () => {
           </div>
         </div>
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 group">
-          <a href="#">
+      
             <div className="relative w-auto h-autox` aspect-w-643 aspect-h-360">
               <img
                 src={pin}
@@ -57,13 +65,13 @@ const Features = () => {
                 className="w-full h-auto z-10  "
               />
             </div>
-          </a>
+        
           <div class="p-5 pb-0">
-            <a href="#">
+        
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-800 dark:text-white">
                 Real-Time Tracking
               </h5>
-            </a>
+          
             <p class="mb-3 font-normal text-text dark:text-gray-400">
               Monitor your shipments with our advanced real-time tracking
               system.
@@ -71,7 +79,7 @@ const Features = () => {
           </div>
         </div>
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 group">
-          <a href="#">
+      
             <div className="relative w-auto h-autox` aspect-w-643 aspect-h-360">
               <img
                 src={discountBg}
@@ -84,13 +92,13 @@ const Features = () => {
                 className="w-full h-auto z-10 "
               />
             </div>
-          </a>
+        
           <div class="p-5 pb-0">
-            <a href="#">
+        
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-800 dark:text-white">
                 Affordable Rates
               </h5>
-            </a>
+          
             <p class="mb-3 font-normal text-text dark:text-gray-400">
               Enjoy reliable courier services at competitive prices tailored to
               your needs.

@@ -1,70 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { useOutletContext } from "react-router-dom";
 import deliveryGuy from "../../assets/deliveryGuyWithLogo.svg";
 import phone from "../../assets/phone.svg";
 import background from "../../assets/background.svg";
-import { toast } from 'react-toastify'; 
+import backgroundDark from "../../assets/backgroundDark.svg";
 import { MdDownload } from "react-icons/md";
+import usePWAInstall from "../hooks/usePwaInstall";
 
 const Hero = () => {
-  const [deferredPrompt, setDeferredPrompt] = useState(null);
-  const [isInstalled, setIsInstalled] = useState(false);
-
-  useEffect(() => {
-    const handleBeforeInstallPrompt = (e) => {
-      e.preventDefault();
-      console.log("beforeinstallprompt event fired");
-      setDeferredPrompt(e); // Store in state
-    };
-
-    window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
-
-    window.addEventListener("appinstalled", () => {
-      console.log("PWA was installed");
-      setIsInstalled(true);
-      setDeferredPrompt(null); // Clear after install
-    });
-
-    if (window.matchMedia("(display-mode: standalone)").matches) {
-      setIsInstalled(true);
-    }
-
-    return () => {
-      window.removeEventListener(
-        "beforeinstallprompt",
-        handleBeforeInstallPrompt
-      );
-      window.removeEventListener("appinstalled", () => setIsInstalled(true));
-    };
-  }, []);
-
-  const handleInstallClick = () => {
-    console.log("Install button clicked");
-
-    if (isInstalled) {
-      openPWA();
-      return;
-    }
-
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-      deferredPrompt.userChoice.then((choiceResult) => {
-        if (choiceResult.outcome === "accepted") {
-          console.log("User accepted the install prompt");
-        } else {
-          console.log("User dismissed the install prompt");
-        }
-        setDeferredPrompt(null);
-      });
-    } else {
-      console.log("No deferred prompt available");
-      openPWA(); // Try opening if installed
-    }
-  };
-
-  const openPWA = () => {
-    // window.location.href = `intent://${window.location.host}/#Intent;scheme=https;action=android.intent.action.VIEW;category=android.intent.category.DEFAULT;end;`;
-    toast.success('App is already installed');
-  };
+  const context = useOutletContext();
+  const darkMode = context?.darkMode ?? false; 
+  const { handleInstallClick } = usePWAInstall();
 
   return (
     <>
@@ -109,7 +55,7 @@ const Hero = () => {
         </div>
         <div className="flex items-center justify-center pt-36 md:w-1/2 md:pb-20 md:pt-10">
           <img
-            src={background}
+            src={darkMode ? backgroundDark : background}
             alt="phone svg"
             className="w-[calc(24rem_+_10vw)] h-auto absolute "
           />

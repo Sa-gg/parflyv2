@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/img/logo.png";
-import DarkMode from "./DarkMode";
 import { MdLightMode } from "react-icons/md";
 import { MdDarkMode } from "react-icons/md";
 
@@ -9,15 +8,15 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   return (
     <nav
       id="navbar"
-      className="bg-white border-gray-200 dark:bg-gray-800 fixed w-full transition-colors duration-300 ease-in-out z-[999]"
+      className="bg-white border-gray-200 dark:bg-gray-800 fixed w-full transition-colors duration-300 ease-in-out z-[999] "
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <NavLink
           to="/"
           className="flex items-center space-x-0 rtl:space-x-reverse"
         >
-          <img src={Logo} className="mr-3 h-[45px] " alt="Parfly Logo" />
-          <span className="self-center text-2xl whitespace-nowrap text-primary dark:text-primary hidden sm:block  italic font-extrabold">
+          <img src={Logo} className=" h-[45px] " alt="Parfly Logo" />
+          <span className="self-center text-2xl whitespace-nowrap text-primary dark:text-primary hidden sm:block  italic font-black">
             PARFLY
           </span>
         </NavLink>
@@ -28,7 +27,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             className="p-2 text-gray-800 dark:text-gray-200 
              dark:bg-gray-800 rounded bg-bg dark:bg-gray-900"
           >
-            {darkMode ? (
+            {!darkMode ? (
               <MdLightMode className="" />
             ) : (
               <MdDarkMode className="text-1xl" />
@@ -38,7 +37,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             id="language-dropdown-menu-btn"
             type="button"
             data-dropdown-toggle="language-dropdown-menu"
-            className="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-text hover:text-[#FF6600] dark:text-white rounded-lg cursor-pointer dark:hover:bg-gray-700 dark:hover:text-[#FF6600] hidden sm:inline-flex"
+            className="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-black hover:text-[#FF6600] dark:text-white rounded-lg cursor-pointer dark:hover:bg-gray-700 dark:hover:text-[#FF6600] hidden sm:inline-flex"
           >
             <svg
               className="w-5 h-5 rounded-full me-3"
@@ -83,7 +82,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           <NavLink
             id="login-btn"
             to="/login"
-            className="text-text hover:text-[#FF6600] dark:text-white font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+            className="text-black hover:text-[#FF6600] dark:hover:text-[#FF6600] dark:text-white font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
           >
             Login
           </NavLink>
@@ -253,7 +252,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             id="menu-btn-mobile"
             data-collapse-toggle="navbar-language"
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-text rounded-lg lg:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg lg:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-language"
             aria-expanded="false"
           >
@@ -286,7 +285,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <li>
               <NavLink
                 to="/business"
-                className="block py-2 px-3 lg:p-0 text-text rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-[#FF6600] hover:text-[#FF6600] dark:text-white lg:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] lg:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 lg:p-0 text-black rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-[#FF6600] hover:text-[#FF6600] dark:text-white lg:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] lg:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Business
               </NavLink>
@@ -294,7 +293,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <li>
               <NavLink
                 to="/personal"
-                className="block py-2 px-3 lg:p-0 text-text rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-[#FF6600] hover:text-[#FF6600] dark:text-white lg:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] lg:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 lg:p-0 text-black rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-[#FF6600] hover:text-[#FF6600] dark:text-white lg:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] lg:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Personal
               </NavLink>
@@ -302,7 +301,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <li>
               <NavLink
                 to="/driver"
-                className="block py-2 px-3 lg:p-0 text-text rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-[#FF6600] hover:text-[#FF6600] dark:text-white lg:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] lg:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 lg:p-0 text-black rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-[#FF6600] hover:text-[#FF6600] dark:text-white lg:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] lg:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Driver
               </NavLink>
@@ -311,7 +310,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               <button
                 id="mega-menu-dropdown-button"
                 data-dropdown-toggle="mega-menu-dropdown"
-                className="flex items-center justify-between w-full py-2 px-3 font-medium text-text border-b border-gray-100 lg:w-auto hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#FF6600] hover:text-[#FF6600] lg:p-0 dark:text-white lg:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] lg:dark:hover:bg-transparent dark:border-gray-700"
+                className="flex items-center justify-between w-full py-2 px-3 font-medium text-black border-b border-gray-100 lg:w-auto hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#FF6600] hover:text-[#FF6600] lg:p-0 dark:text-white lg:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] lg:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Company
                 <svg
@@ -410,7 +409,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <li>
               <NavLink
                 to="/team"
-                className="block py-2 px-3 lg:p-0 text-text rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-[#FF6600] hover:text-[#FF6600] dark:text-white lg:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] lg:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 lg:p-0 text-black rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-[#FF6600] hover:text-[#FF6600] dark:text-white lg:dark:hover:text-[#FF6600] dark:hover:bg-gray-700 dark:hover:text-[#FF6600] lg:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Team
               </NavLink>

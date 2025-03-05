@@ -1,6 +1,4 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import { toast } from "react-toastify";
 import {
   FaFacebook,
   FaLinkedinIn,
@@ -13,67 +11,11 @@ import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdDownload } from "react-icons/md";
 import Logo from "../../assets/img/logo.png";
+import usePWAInstall from "../hooks/usePwaInstall";
+
 
 const Footer = () => {
-  const [deferredPrompt, setDeferredPrompt] = useState(null);
-  const [isInstalled, setIsInstalled] = useState(false);
-
-  useEffect(() => {
-    const handleBeforeInstallPrompt = (e) => {
-      e.preventDefault();
-      console.log("beforeinstallprompt event fired");
-      setDeferredPrompt(e); // Store in state
-    };
-
-    window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
-
-    window.addEventListener("appinstalled", () => {
-      console.log("PWA was installed");
-      setIsInstalled(true);
-      setDeferredPrompt(null); // Clear after install
-    });
-
-    if (window.matchMedia("(display-mode: standalone)").matches) {
-      setIsInstalled(true);
-    }
-
-    return () => {
-      window.removeEventListener(
-        "beforeinstallprompt",
-        handleBeforeInstallPrompt
-      );
-      window.removeEventListener("appinstalled", () => setIsInstalled(true));
-    };
-  }, []);
-
-  const handleInstallClick = () => {
-    console.log("Install button clicked");
-
-    if (isInstalled) {
-      openPWA();
-      return;
-    }
-
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-      deferredPrompt.userChoice.then((choiceResult) => {
-        if (choiceResult.outcome === "accepted") {
-          console.log("User accepted the install prompt");
-        } else {
-          console.log("User dismissed the install prompt");
-        }
-        setDeferredPrompt(null);
-      });
-    } else {
-      console.log("No deferred prompt available");
-      openPWA(); // Try opening if installed
-    }
-  };
-
-  const openPWA = () => {
-    // window.location.href = `intent://${window.location.host}/#Intent;scheme=https;action=android.intent.action.VIEW;category=android.intent.category.DEFAULT;end;`;
-    toast.success("App is already installed");
-  };
+  const { handleInstallClick } = usePWAInstall();
 
   return (
     <footer>
@@ -81,10 +23,10 @@ const Footer = () => {
         <div className="mx-auto w-full max-w-[1166px] px-4 xl:px-0">
           <div className="flex flex-col justify-between sm:px-[18px] md:flex-row md:px-10">
             <div className="md:w-[316px]">
-              <p className="text-[18px] font-medium text-black dark:text-white">
-                <img src={Logo} alt="" className="h-8 inline mr-2" />
-                <h1 className="text-primary font-extrabold inline">
-                  <span className="text-primary">PAR</span>FLY
+              <p className="text-[18px] font-medium text-black dark:text-white flex items-center">
+                <img src={Logo} alt="" className="h-8 inline" />
+                <h1 className="text-primary font-black inline italic">
+                 PARFLY
                 </h1>
               </p>
 

@@ -5,9 +5,9 @@ const About = () => {
   return (
     <>
       <section id="about" class="px-[5vw] py-[5vw]">
-      <h2 className="text-center text-primary font-bold text-base pt-[10vh] md:pt-0 hidden">
-        ABOUT US
-      </h2>
+        <h2 className="text-center text-primary font-bold text-base pt-[10vh] md:pt-0 hidden">
+          ABOUT US
+        </h2>
         <div class="container mx-auto py-0 md:py-[4vh] px-4 sm:px-6 lg:px-8 ">
           <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <div class="max-w-lg">
@@ -15,12 +15,12 @@ const About = () => {
                 Connecting Your World
               </h3>
               <p class="mt-4 text-text text-lg">
-                Parlfly is your go-to platform for fast, secure, and reliable
-                delivery solutions. Designed with simplicity and efficiency in
-                mind, we make sending and receiving parcels effortless for
-                individuals and businesses alike. With real-time tracking,
-                trusted couriers, and flexible options, Parlfly ensures your
-                packages are always in safe hands.
+                At PARFLY, we are redefining courier services with a fast and
+                reliable web-based delivery platform. Designed for businesses
+                and individuals, PARFLY simplifies logistics with real-time
+                tracking, seamless management, and trusted drivers. Whether
+                you're shipping a package or running a business, we make~
+                deliveries effortless.
               </p>
               <div class="mt-8">
                 <a href="#" class="text-primary hover:text-primary-dark">
