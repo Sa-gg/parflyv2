@@ -142,7 +142,7 @@ const Footer = () => {
                     href="mailto:help@lorem.com"
                     className="font-Inter text-[14px] font-medium text-black dark:text-white"
                   >
-                    help@lorem.com
+                    parfly@app.com
                   </a>
                   <p className="font-Inter text-[12px] font-medium text-black dark:text-white">
                     Support Email

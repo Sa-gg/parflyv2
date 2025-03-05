@@ -1,15 +1,14 @@
-import React from 'react'
-import { Outlet  } from 'react-router'
-import Login from '../auth/Login'
-import Register from '../auth/Register'
-
+import React from "react";
+import { Outlet, useOutletContext } from "react-router-dom";
 
 const AuthLayout = () => {
-  return (
-    <>
-      <Outlet />
-    </>
-  )
-}
+  const { darkMode } = useOutletContext();
 
-export default AuthLayout
+  return (
+    <div className={`min-h-screen flex items-center justify-center ${darkMode ? "dark bg-gray-900 text-white" : "bg-white text-black"}`}>
+      <Outlet />
+    </div>
+  );
+};
+
+export default AuthLayout;

@@ -17,8 +17,8 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           className="flex items-center space-x-0 rtl:space-x-reverse"
         >
           <img src={Logo} className="mr-3 h-[45px] " alt="Parfly Logo" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-primary dark:text-primary hidden sm:block ">
-            Parfly
+          <span className="self-center text-2xl whitespace-nowrap text-primary dark:text-primary hidden sm:block  italic font-extrabold">
+            PARFLY
           </span>
         </NavLink>
         <div className="flex items-center md:order-2 space-x-2 md:space-x-0 rtl:space-x-reverse">
